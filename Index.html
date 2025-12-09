@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Profesional</title>
+    <style>
+        :root {
+            --primary-green: #1c7c54;
+            --accent-yellow: #f5c518;
+            --bg-white: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--bg-white);
+            color: #222;
+        }
+
+        /* NAVBAR */
+        nav {
+            background: var(--primary-green);
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--bg-white);
+        }
+        nav h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+        nav ul li a {
+            color: var(--bg-white);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        nav ul li a:hover {
+            color: var(--accent-yellow);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            padding: 120px 40px;
+            text-align: center;
+            background: linear-gradient(
+                to bottom right,
+                var(--bg-white) 60%,
+                var(--primary-green) 30%,
+                var(--accent-yellow) 10%
+            );
+        }
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* CONTENT SECTION */
+        .section {
+            padding: 80px 40px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .section h3 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            border-left: 8px solid var(--primary-green);
+            padding-left: 15px;
+        }
+
+        /* GRID FOR COLLECTIONS */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .item {
+            background: var(--bg-white);
+            border: 2px solid var(--primary-green);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+        }
+        .item:hover {
+            border-color: var(--accent-yellow);
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 30px;
+            text-align: center;
+            background: var(--primary-green);
+            color: var(--bg-white);
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <h1>Brand Profesional</h1>
+        <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#tentang">Tentang Kami</a></li>
+            <li><a href="#koleksi">Koleksi Kami</a></li>
+            <li><a href="#shopping">Shopping</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="beranda">
+        <h2>Selamat Datang di Website Profesional</h2>
+        <p>Kami menghadirkan desain modern, bersih, dan elegan untuk menunjang kebutuhan bisnis Anda.</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="tentang">
+        <h3>Tentang Kami</h3>
+        <p>
+            Kami adalah tim kreatif yang berfokus pada pengembangan website dan layanan digital. 
+            Visi kami adalah menciptakan pengalaman digital yang modern, aman, dan user-friendly.
+        </p>
+    </section>
+
+    <!-- COLLECTION -->
+    <section class="section" id="koleksi">
+        <h3>Koleksi Kami</h3>
+        <div class="grid">
+            <div class="item">Koleksi 1</div>
+            <div class="item">Koleksi 2</div>
+            <div class="item">Koleksi 3</div>
+            <div class="item">Koleksi 4</div>
+        </div>
+    </section>
+
+    <!-- SHOPPING -->
+    <section class="section" id="shopping">
+        <h3>Shopping</h3>
+        <p>Hubungi kami untuk pemesanan atau konsultasi produk.</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Brand Profesional — Semua Hak Dilindungi.
+    </footer>
+
+</body>
+</html>
